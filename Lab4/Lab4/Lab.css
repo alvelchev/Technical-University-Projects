@@ -1,0 +1,177 @@
+body{
+    background:#282828
+	url(images/bg01.png) repeat;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	margin:0;
+	padding:0;
+}
+
+.container{
+    margin: 0px auto;
+    width: 90%;	
+}
+
+.navigation{
+    height: 70px;
+    background: #1B1B1B url(images/bg01.png) repeat;
+    margin-top: 2em;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-bottom: 4px solid #BC1414;
+    margin-bottom: 2em;
+}
+
+.navigation p {
+    color: #BC1414;
+}
+
+aside{
+    height: 70px;
+	float: left;
+	display: flex;
+	align-items: center;
+}
+
+aside p{
+    margin: 0;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    font-weight: bold;	
+}
+
+nav{
+   float: right;
+   display: flex;
+   align-items: center;
+}
+
+ul{
+	margin: 0;
+	display: inline-block;
+	list-style-type: none;
+	overflow: hidden;
+}
+
+li{
+   margin: 0;
+   float:left; 
+}
+
+#menuItem1, #menuItem2 , #menuItem3, #menuItem4{
+  padding: 0 20px;
+  display:block;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 70px;
+  letter-spacing: 1px;
+  font-size: 1em;
+  font-weight: bold;
+  color: white;
+}
+
+#menuItem1:hover {
+    color: white;
+    background-color: #BC1414;
+}
+
+#menuItem2:hover {
+    color: white;
+    background-color: #BC1414;
+}
+
+#menuItem3:hover {
+    color: white;
+    background-color: #BC1414;
+}
+
+#menuItem4:hover {
+    color: white;
+    background-color: #BC1414;
+}
+
+img{
+    width: 100%;
+	height: auto;
+}
+
+article{
+    width: 30%;
+	padding: 10px 20px;
+	margin-top: 0.3em;
+	margin-bottom: 2em;
+	float: left;
+	background: white;
+}
+
+.button {
+    padding: 10px;
+    width: 115px;
+    height: 20px;
+    display: block;
+    text-align: center;
+    color: white;
+    background: #BC1414;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.contacts {
+    width: 500px;
+    height: 450px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.one-column {
+    margin-bottom: 5px;
+    margin-top: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 400px;
+    width: 430px;
+}
+
+#forUs, #forUs2 {
+    width: 46.7%;
+    margin-bottom: 2em;
+    padding: 10px 20px 10px;
+    float: left;
+    background: white;
+}
+
+.button{
+    padding: 3px;
+    background-color: #BC1414;
+    color: white;
+    border: none;
+    width: 100px;
+}
+
+#galleries {
+    background-color: white;
+}
+
+#productHead {
+    text-align: center;
+}
+
+span{
+    color: black;
+    font-size: 16px;
+    text-align: center;
+}
+
+.footer{
+   position: relative;
+   clear: both;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   color: gray;
+   text-align: center;
+	text-transform: uppercase;
+	border-top:1px solid gray;
+}

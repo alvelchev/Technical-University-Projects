@@ -1,0 +1,32 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Lab4.Site" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title><%: Page.Title %></title>
+    <link rel="stylesheet" href="Lab.css" />
+</head>
+<body>
+      <form runat="server">
+         <div class="container">
+             <header class="navigation">
+                 <aside><p>AVON</p></aside>
+                 <nav>
+                     <ul>
+                         <li><a id="menuItem1" runat="server" href="~/Default.aspx">Начало</a></li>
+                         <li><a id="menuItem2" runat="server" href="~/ForUs.aspx">За нас</a></li>
+                         <li><a id="menuItem3" runat="server" href="~/Contacts.aspx">Контакти</a></li>
+                         <li><a id="menuItem4" runat="server" href="~/ProductList.aspx"> Продукти</a></li>
+                     </ul>
+                 </nav>
+             </header>
+             <asp:ContentPlaceHolder ID="MainContent" runat="server">
+             </asp:ContentPlaceHolder>
+             <div class="footer">
+                <p>&copy; <%: DateTime.Now.Year %> - AVON</p>
+             </div>
+        </div>
+     </form>
+</body>
+</html>

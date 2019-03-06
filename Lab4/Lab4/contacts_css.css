@@ -1,0 +1,152 @@
+body{
+    background:#282828
+	url(images/bg01.png) repeat;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	margin:0;
+	padding:0;
+}
+
+.container{
+    margin: 0px auto;
+    width: 90%;	
+}
+
+header{
+    height: 70px;
+    background:	#1B1B1B url(images/bg01.png) repeat;
+	margin-top: 2em;
+	padding-left: 50px;
+	padding-right: 50px;
+	border-bottom: 4px solid #BC1414;
+	margin-bottom: 2em;
+}
+
+header p{
+    color: #BC1414;
+}
+
+aside{
+    height: 70px;
+	float: left;
+	display: flex;
+	align-items: center;
+}
+
+aside p{
+    margin: 0;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    font-weight: bold;	
+}
+
+nav{
+   float: right;
+   display: flex;
+   align-items: center;
+}
+
+ul{
+	margin: 0;
+	display: inline-block;
+	list-style-type: none;
+	overflow: hidden;
+}
+
+li{
+   margin: 0;
+   float:left; 
+}
+
+a{
+  padding: 0 20px;
+  display:block;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 70px;
+  letter-spacing: 1px;
+  font-size: 1em;
+  font-weight: bold;
+  color: white;
+}
+
+a:hover{
+   color: white;
+   background-color: #BC1414;
+}
+
+.contacts{
+   width: 500px;
+   height: 450px;
+   margin-top: 2em;
+   margin-bottom: 2em;
+   margin-left: auto;
+   margin-right: auto;
+   
+}
+
+.formHead{
+	margin: 0;
+	padding: 0.1em;
+	height: auto;
+	background: url(images/bg02.png) repeat;
+}
+
+h1, h3{
+    text-align: center;
+}
+
+.one-column{
+    margin-bottom: 10px;
+	margin-top: 10px;
+	margin-left: 20px;
+	margin-right: 20px;
+	height: 460px;
+	width: 430px;
+}
+
+section{
+    background-color: white;
+}
+
+table{
+   align-content: center;
+   height: 300px;
+   width: 420px;
+}
+
+td{
+   column-width:210px;
+}
+
+inpur[type=text]{
+     width: 208px;	
+}
+
+select{
+    width: 212px;
+}
+
+textarea{
+    width: 420px;
+}
+
+.button-submit{
+    padding: 2px;
+	background-color:#BC1414;
+	color: white;
+	border: none;
+	width: 100px;
+}
+
+.footer{
+   position: relative;
+   clear: both;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   color: gray;
+   text-align: center;
+	text-transform: uppercase;
+	border-top:1px solid gray;
+}
