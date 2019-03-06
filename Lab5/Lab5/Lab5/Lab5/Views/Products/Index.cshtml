@@ -1,0 +1,38 @@
+﻿@model IEnumerable<Lab4.Models.Product>
+
+@{
+    ViewData["Title"] = "Продукти";
+}
+
+<section id="galleries">
+    <h1>@ViewData["Title"]</h1>
+    <table>
+        @{ var i = 0;}
+        <tr>
+            @foreach (var product in Model)
+            {
+                <td>
+                    @{i++;}
+                    <a asp-controller="Products" asp-action="Details" asp-route-id="@product.ProductID">
+                        <img src="/@product.ImagePath" asp-append-version="true" style="width:130px;height:200px;border:solid"/>
+                    </a>
+                    <br />
+                    <a asp-controller="Products" asp-action="Details" asp-route-id="@product.ProductID">@product.ProductName</a>
+                    <br />
+                    <span>
+                        <b>Цена: </b>
+                        @Html.FormatValue(product.UnitPrice, "{0:C}")
+                    </span>
+                    <br />
+                </td>
+                if (i == 6)
+                {
+                    i = 0;
+            @:</tr>
+            @:<tr>
+        //TODO:
+                }
+            }
+         </tr>
+    </table>
+</section>

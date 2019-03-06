@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - AVON</title>
+    <link rel="stylesheet" href="~/css/Lab.css" />
+</head>
+<body>
+    <div class="container">
+        <header>
+            <aside><p>AVON</p></aside>
+            <nav>
+                <ul>
+                    <li><a asp-area="" asp-controller="Home" asp-action="Index">Начало</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="About">За нас</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="Contact">Контакти</a></li>
+                    <li><a asp-area="" asp-controller="Products" asp-action="Index">Продукти</a></li>
+                </ul>
+            </nav>
+        </header>
+        @RenderBody()
+        <footer><p>&copy; @DateTime.Now.Year - AVON</p></footer>
+    </div>
+</body>
+</html>

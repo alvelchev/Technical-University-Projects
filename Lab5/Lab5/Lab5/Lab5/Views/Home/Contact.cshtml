@@ -1,0 +1,68 @@
+﻿@model Lab5.Models.Contact
+@{
+    ViewData["Title"] = "Контакти";
+}
+<section class="contacts">
+    <header>
+        <h2>@ViewData["Title"]</h2>
+        <h3>Моля, попълнете формата!</h3>
+    </header>
+    <article class="one-column">
+        <form asp-action="Contact">
+            <div asp-validation-summary="ModelOnly" class="validation"></div>
+            <table>
+                <tr>
+                    <td><label asp-for="FirstName"></label></td>
+                    <td><input asp-for="FirstName" /></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><span asp-validation-for="FirstName" class="validation"></span></td>
+                </tr>
+                <tr>
+                    <td><label asp-for="FamilyName"></label></td>
+                    <td><input asp-for="FamilyName" /></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><span asp-validation-for="FamilyName" class="validation"></span></td>
+                </tr>
+                <tr>
+                    <td><label asp-for="Email"></label></td>
+                    <td><input asp-for="Email" /></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><span asp-validation-for="Email" class="validation"></span></td>
+                </tr>
+                <tr>
+                    <td><label asp-for="Subject"></label></td>
+                    <td>
+                        <select asp-for="Subject" asp-items="Model.Subjects"></select>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><span asp-validation-for="Subject" class="validation"></span></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><label asp-for="Comment"></label></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <textarea asp-for="Comment" class="ta"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <span asp-validation-for="Comment" class="validation"></span></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="submit" value="Изпрати" class="button-submit" style="margin:0 150px" />
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </article>
+</section>

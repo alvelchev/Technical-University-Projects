@@ -1,0 +1,33 @@
+﻿@model Lab4.Models.Product
+
+@{
+    ViewData["Title"] = "Детайли за продукти";
+}
+<div class="container">
+    <section class="contacts">
+        <article class="one-column">
+            <table>
+                <thead>
+                    <tr style="height:50px">
+                        <th colspan="2"><h1>@Model.ProductName</h1></th>
+                    </tr>
+                </thead>
+                <tr>
+                    <td>
+                        <img src="/@Model.ImagePath" asp-append-version="true" style="border:solid;width:200px;height:300px"alt="@Model.ProductName" />
+                    </td>
+                    <td style="vertical-align:top; text-align:left">
+                        <b>Описание:</b><br />@Model.Description<br />
+                        <span>
+                            <b>Цена: </b>
+                            @Html.FormatValue(@Model.UnitPrice, "{0:C}")
+                        </span>
+                        <br />
+                        <span><b>Номер на продукт: </b>@Model.ProductID</span>
+                        <br />
+                    </td>
+                </tr>
+            </table>
+        </article>
+    </section>
+</div>
